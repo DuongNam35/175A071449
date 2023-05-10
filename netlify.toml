@@ -1,6 +1,6 @@
 [build]
   command = "python manage.py collectstatic --noinput"
-  publish = "path/to/your/static/files"
+  publish = "draft06/staticfiles"
 
 [build.environment]
-  DJANGO_SETTINGS_MODULE = "app.settings"
+  DJANGO_SETTINGS_MODULE = "draft06.settings"
