@@ -25,7 +25,7 @@ SECRET_KEY = '=c%6gkq=b!@9f)3i^ong(52jf79cishdi(pi4+8gfnl$w4qth5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -119,3 +119,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+import django_heroku
+
+# ... các cài đặt khác ở đây
+
+# Cấu hình Django để sử dụng cấu hình Heroku
+django_heroku.settings(locals())
